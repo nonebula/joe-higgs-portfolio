@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+/* site variables */
+
+:root{
+  --base-color: #02075d;
+  --primary-heading-color: #5CDB95;
+  --primary-text-color: #fff;
+  --secondary-heading-color: #4189e0;
+  --secondary-text-color: #F64C72;
+  --link-color: #CB2D6f;
+  --button-color: #F79E02;
+  --border-color: #3FEEE6;
+  --primary-header-font-size: 36px;
+  --secondary-head-font-size: 28px;
+  --font-size: 16px;
+  --spacing-unit: 10px;
+  --button-padding: 10px 20px;
+  --box-padding: 10px 20px;
+  --small-screen: 768px;
+  --medium-screen: 992px;
+  --large-screen: 1200px;
+}
+
+/* nav bar formatting */
+
+/* background styling needed here, maybe different to main body background */
+header {
+  padding: 20px;
+  font-family: 'Open Sans', 'Roboto Slab', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--base-color);
+  color: var(--primary-heading-color);
+}
+
+nav {
+  color:var(--secondary-text-color);
+  padding: 10px;
+}
+
+nav ul{
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color:var(--secondary-text-color);
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: var(--link-color) 
+}
+
+/* body formatting */
+body {
+  background-color: var(--base-color);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Open Sans', 'Roboto Slab', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  padding: 10px;
+  margin: 10px;
+  word-spacing: 1.5px;
+  width: 70%;
+  text-align: justify;
+}
+
+/* header styles */
+h1 {
+  padding: 10px;
+  color: var(--primary-heading-color);
+  font-size: var(--primary-header-font-size);
+}
+
+/* something maybe to be done here. bg image in background needed with text overlay */
+h2 {
+  padding: 10px;
+  text-align: right;
+  color: var(--primary-heading-color);
+  font-size: var(--primary-header-font-size);
+}
+
+h3 {
+  padding: 10px;
+  color: var(--primary-heading-color);
+  font-size: var(--primary-header-font-size);
+  width: 20%;
+  border-right: 3px solid var(--border-color);
+  margin-right: 10px;
+}
+
+h4 {
+  padding: 10px;
+  color: var(--secondary-heading-color);
+  font-size: var(--secondary-head-font-size)
+}
+
+h5 {
+  padding: 10px;
+}
+
+h6 {
+  padding: 10px;
+  margin: 0;
+}
+
+.hero-banner {
+text-align: right;
+}
+
+.page-section {
+  text-align: left;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* contact me footer formatting */
+footer {
+  padding: 10px;
+  margin: 10px;
+  word-spacing: 1.5px;
+  width: 70%;
+  text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color:var(--secondary-text-color);
+    transition: color 0.5s;
+  }
+  
+footer a:hover {
+    color: var(--link-color)
+  }
+
+
+
+
+/* contact link formatting
+body ul {
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+}
+
+body li {
+  margin: 0 15px;
+}
+
+body a {
+  text-decoration: none;
+  color:var(--secondary-text-color);
+  transition: color 0.5s;
+}
+
+body a:hover {
+  color: var(--link-color)
+} */
