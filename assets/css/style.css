@@ -27,11 +27,24 @@
 /* nav bar formatting */
 
 /* background styling needed here, maybe different to main body background */
+
+h1, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+}
+
 header {
   padding: 20px;
   font-family: 'Open Sans', 'Roboto Slab', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--base-color);
   color: var(--primary-heading-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav {
@@ -40,14 +53,13 @@ nav {
 }
 
 nav ul{
+  display: flex;
   list-style: none;
-  text-align: center;
-  font-size: 24px;
+  font-size: 36px;
 }
 
 nav li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0 125px;
 }
 
 nav a {
@@ -86,7 +98,7 @@ h1 {
   font-size: var(--primary-header-font-size);
 }
 
-/* something maybe to be done here. bg image in background needed with text overlay */
+/* something maybe to be done here. */
 h2 {
   padding: 10px;
   text-align: right;
@@ -127,10 +139,10 @@ text-align: right;
   margin-bottom: 20px;
 }
 
-/* hero banner styling 
-THIS ISN'T WORKING ON THE PAGE*/
+/* hero banner styling */
+
 .hero-banner{
-  background-image: url(/images/02-hero-bg.jpg);
+  background-image: url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -139,8 +151,8 @@ THIS ISN'T WORKING ON THE PAGE*/
 
 .column {
   display: flex;
-  height: 1200px;
-  width: 800px;
+  height: auto;
+  width: auto;
   flex-direction: column;
   margin: 0 auto;
 }
@@ -153,7 +165,7 @@ THIS ISN'T WORKING ON THE PAGE*/
   align-items: flex-end;
   margin-bottom: 20px;
   margin-top:20px;
-  background-image: url("/assets/images/02-portfolio-2.jpg");
+  background-image: url(../images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -204,39 +216,39 @@ THIS ISN'T WORKING ON THE PAGE*/
 
 /* images not working here */
 .project1 {
-  background-image: url("./images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;  
 }
 .project2 {
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .project3 {
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .project4 {
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .project5 {
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .project6 {
-  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-image: url(../images/02-portfolio-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -246,10 +258,15 @@ THIS ISN'T WORKING ON THE PAGE*/
 footer {
   padding: 10px;
   margin: 10px;
+  font-size: 32px;
   word-spacing: 1.5px;
   width: 70%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
 
 footer a {
     text-decoration: none;
