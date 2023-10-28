@@ -104,7 +104,6 @@ h3 {
 }
 
 h4 {
-  padding: 10px;
   color: var(--secondary-heading-color);
   font-size: var(--secondary-head-font-size)
 }
@@ -126,6 +125,121 @@ text-align: right;
   text-align: left;
   display: flex;
   margin-bottom: 20px;
+}
+
+/* hero banner styling 
+THIS ISN'T WORKING ON THE PAGE*/
+.hero-banner{
+  background-image: url(/images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.column {
+  display: flex;
+  height: 1200px;
+  width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* primary project section - image also not working. */
+.primaryproject {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-top:20px;
+  background-image: url("/assets/images/02-portfolio-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.flexPrimary {
+  width: 1000px;
+  height: 600px;
+  margin: 10px;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* secondary projects section */
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRow {
+    display: flex;
+    justify-content: center;
+}
+
+.flexItem {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.content {
+  background-color: white;
+  color: var(--secondary-text-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* images not working here */
+.project1 {
+  background-image: url("./images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+}
+.project2 {
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 {
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project4 {
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project5 {
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project6 {
+  background-image: url("/assets/images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* contact me footer formatting */
