@@ -1,24 +1,22 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* site variables */
 
-:root{
-  --base-color: #02075d;
-  --primary-heading-color: #5CDB95;
+:root {
+  --base-color: black;
+  --primary-heading-color: #5cdb95;
   --primary-text-color: #fff;
-  --secondary-heading-color: #4189e0;
-  --secondary-text-color: #F64C72;
-  --link-color: #CB2D6f;
-  --button-color: #F79E02;
-  --border-color: #3FEEE6;
-  --primary-header-font-size: 36px;
-  --secondary-head-font-size: 28px;
-  --font-size: 16px;
-  --spacing-unit: 10px;
-  --button-padding: 10px 20px;
-  --box-padding: 10px 20px;
+  --secondary-heading-color: #330066;
+  --secondary-text-color: #f64c72;
+  --link-color: #cb2d6f;
+  --border-color: #3feee6;
+  --primary-heading-font-size: 32px;
+  --nav-bar-font-size: 22px;
+  --secondary-heading-font-size: 24px;
   --small-screen: 768px;
   --medium-screen: 992px;
   --large-screen: 1200px;
@@ -26,36 +24,36 @@
 
 /* nav bar formatting */
 
-/* background styling needed here, maybe different to main body background */
-
-h1, ul {
+h1,
+ul {
   margin: 0;
   padding: 0;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
 header {
   padding: 20px;
-  font-family: 'Open Sans', 'Roboto Slab', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
   background-color: var(--base-color);
   color: var(--primary-heading-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 nav {
-  color:var(--secondary-text-color);
+  color: var(--secondary-text-color);
   padding: 10px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
-  font-size: 36px;
+  font-size: var(--nav-bar-font-size);
 }
 
 nav li {
@@ -64,12 +62,12 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color:var(--secondary-text-color);
+  color: var(--secondary-text-color);
   transition: color 0.5s;
 }
 
 nav a:hover {
-  color: var(--link-color) 
+  color: var(--link-color);
 }
 
 /* body formatting */
@@ -77,9 +75,8 @@ body {
   background-color: var(--base-color);
   color: var(--primary-text-color);
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  font-family: 'Open Sans', 'Roboto Slab', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
   line-height: 1.5;
 }
 
@@ -94,22 +91,24 @@ p {
 /* header styles */
 h1 {
   padding: 10px;
-  color: var(--primary-heading-color);
-  font-size: var(--primary-header-font-size);
+  color: yellow;
+  font-size: var(--primary-heading-font-size);
 }
 
 /* something maybe to be done here. */
 h2 {
   padding: 10px;
   text-align: right;
-  color: var(--primary-heading-color);
-  font-size: var(--primary-header-font-size);
+  color: yellow;
+  font-size: var(--primary-heading-font-size);
+  background-color: var(--base-color);
 }
 
 h3 {
   padding: 10px;
+  margin: 25px;
   color: var(--primary-heading-color);
-  font-size: var(--primary-header-font-size);
+  font-size: var(--primary-heading-font-size);
   width: 20%;
   border-right: 3px solid var(--border-color);
   margin-right: 10px;
@@ -117,7 +116,8 @@ h3 {
 
 h4 {
   color: var(--secondary-heading-color);
-  font-size: var(--secondary-head-font-size)
+  font-size: var(--secondary-heading-font-size);
+  margin: 10px;
 }
 
 h5 {
@@ -130,7 +130,10 @@ h6 {
 }
 
 .hero-banner {
-text-align: right;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .page-section {
@@ -141,12 +144,12 @@ text-align: right;
 
 /* hero banner styling */
 
-.hero-banner{
+.hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 300px;
 }
 
 .column {
@@ -164,7 +167,7 @@ text-align: right;
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
-  margin-top:20px;
+  margin-top: 20px;
   background-image: url(../images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,6 +185,10 @@ text-align: right;
   justify-content: flex-end;
 }
 
+.flexPrimary:hover {
+  opacity: 50%;
+}
+
 /* secondary projects section */
 .flexContainer {
   display: flex;
@@ -190,9 +197,32 @@ text-align: right;
 }
 
 .flexRow {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
+/* <!-- Need to change to overlay cards
+Overlay Card with Title
+Use position properties and negative margins to raise elements higher than their natural starting point.
+.card-header {
+position: relative;
+margin-top: -20px;
+}
+
+Box Transition Glow
+Use transition and box shadows to glow on hover.
+.code-card .card-header {
+border-radius: 8px;
+Transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+Box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+0 0 15px rgba(232, 102, 236, 1);
+}
+
+--> */
 
 .flexItem {
   width: 500px;
@@ -205,13 +235,17 @@ text-align: right;
   justify-content: flex-end;
 }
 
+.flexItem:hover {
+  opacity: 0.5;
+}
+
 .content {
   background-color: white;
   color: var(--secondary-text-color);
   position: absolute;
+  width: 30%;
+  height: 40%;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 /* images not working here */
@@ -219,7 +253,7 @@ text-align: right;
   background-image: url(../images/02-portfolio-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 .project2 {
   background-image: url(../images/02-portfolio-3.jpg);
@@ -258,7 +292,7 @@ text-align: right;
 footer {
   padding: 10px;
   margin: 10px;
-  font-size: 32px;
+  font-size: 20px;
   word-spacing: 1.5px;
   width: 70%;
   text-align: center;
@@ -267,19 +301,15 @@ footer {
   align-items: center;
 }
 
-
 footer a {
-    text-decoration: none;
-    color:var(--secondary-text-color);
-    transition: color 0.5s;
-  }
-  
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  transition: color 0.5s;
+}
+
 footer a:hover {
-    color: var(--link-color)
-  }
-
-
-
+  color: var(--link-color);
+}
 
 /* contact link formatting
 body ul {
