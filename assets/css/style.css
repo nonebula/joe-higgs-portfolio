@@ -138,6 +138,18 @@ h5 {
   background-color: var(--primary-heading-color);
 }
 
+.contact-item {
+  display:flex;
+  align-items:center;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-item i {
+  margin-right:10px;
+  color: var(--base-color);
+}
+
 h6 {
   padding: 10px;
   margin: 0;
