@@ -7,13 +7,17 @@
 /* site variables */
 
 :root {
-  --base-color: black;
-  --primary-heading-color: #5cdb95;
-  --primary-text-color: #fff;
-  --secondary-heading-color: #330066;
-  --secondary-text-color: #f64c72;
-  --link-color: #cb2d6f;
-  --border-color: #3feee6;
+  --base-color: #fff;
+  --primary-heading-color: #00308F;
+  --name-color: #fff;
+  --tagline-color: #fff;
+  --primary-text-color: #222629;
+  --secondary-heading-color: #003399;
+  --nav-text-color: #B9D9EB;
+  --secondary-text-color: #474B4F;
+  --link-color: #31708E;
+  --link-hover-color: #8FC1E3;
+  --border-color: #29648A;
   --primary-heading-font-size: 32px;
   --nav-bar-font-size: 22px;
   --secondary-heading-font-size: 24px;
@@ -38,7 +42,7 @@ header {
   padding: 20px;
   font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
-  background-color: var(--base-color);
+  background-color: var(--primary-heading-color);
   color: var(--primary-heading-color);
   display: flex;
   justify-content: space-evenly;
@@ -46,7 +50,7 @@ header {
 }
 
 nav {
-  color: var(--secondary-text-color);
+  color: var(--nav-text-color);
   padding: 10px;
 }
 
@@ -62,7 +66,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: var(--secondary-text-color);
+  color: var(--nav-text-color);
   transition: color 0.5s;
 }
 
@@ -91,7 +95,7 @@ p {
 /* header styles */
 h1 {
   padding: 10px;
-  color: yellow;
+  color: var(--name-color);
   font-size: var(--primary-heading-font-size);
 }
 
@@ -99,9 +103,9 @@ h1 {
 h2 {
   padding: 10px;
   text-align: right;
-  color: yellow;
+  color: var(--tagline-color);
   font-size: var(--primary-heading-font-size);
-  background-color: var(--base-color);
+  background-color: var(--secondary-heading-color);
 }
 
 h3 {
@@ -122,18 +126,21 @@ h4 {
 
 h5 {
   padding: 10px;
+  margin: 25px;
+  color: var(--base-color);
+  font-size: var(--primary-heading-font-size);
+  width: 20%;
+  border-right: 3px solid var(--base-color);
+  margin-right: 10px;
+}
+
+#contact {
+  background-color: var(--primary-heading-color);
 }
 
 h6 {
   padding: 10px;
   margin: 0;
-}
-
-.hero-banner {
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
 }
 
 .page-section {
@@ -143,8 +150,11 @@ h6 {
 }
 
 /* hero banner styling */
-
 .hero-banner {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
   background-image: url(../images/02-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,7 +313,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: var(--secondary-text-color);
+  color: var(--nav-text-color);
   transition: color 0.5s;
 }
 
