@@ -189,7 +189,7 @@ h6 {
   align-items: flex-end;
   margin-bottom: 20px;
   margin-top: 20px;
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/horiseon.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -237,31 +237,39 @@ h6 {
   opacity: 0.5;
 }
 
-.content {
+.pri-content {
   background-color: white;
   color: var(--secondary-text-color);
   position: absolute;
   width: 30%;
-  height: 40%;
+  height: 30%;
   bottom: 0;
 }
 
-/* images not working here */
+.content {
+  background-color: white;
+  color: var(--secondary-text-color);
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+}
+
 .project1 {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/prework.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .project2 {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/portfolio.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .project3 {
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/02-portfolio-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
