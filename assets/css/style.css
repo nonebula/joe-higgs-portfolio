@@ -99,7 +99,6 @@ h1 {
   font-size: var(--primary-heading-font-size);
 }
 
-/* something maybe to be done here. */
 h2 {
   padding: 10px;
   text-align: right;
@@ -182,7 +181,7 @@ h6 {
   margin: 0 auto;
 }
 
-/* primary project section - image also not working. */
+/* primary project section */
 .primaryproject {
   height: 100%;
   width: 100%;
@@ -222,29 +221,6 @@ h6 {
   display: flex;
   justify-content: center;
 }
-
-/* <!-- Need to change to overlay cards
-Overlay Card with Title
-Use position properties and negative margins to raise elements higher than their natural starting point.
-.card-header {
-position: relative;
-margin-top: -20px;
-}
-
-Box Transition Glow
-Use transition and box shadows to glow on hover.
-.code-card .card-header {
-border-radius: 8px;
-Transition: all 0.5s ease-in-out;
-}
-
-.code-card:hover,
-.code-card:hover .card-header {
-Box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
-0 0 15px rgba(232, 102, 236, 1);
-}
-
---> */
 
 .flexItem {
   width: 500px;
@@ -332,24 +308,3 @@ footer a {
 footer a:hover {
   color: var(--link-color);
 }
-
-/* contact link formatting
-body ul {
-  list-style: none;
-  text-align: center;
-  font-size: 24px;
-}
-
-body li {
-  margin: 0 15px;
-}
-
-body a {
-  text-decoration: none;
-  color:var(--secondary-text-color);
-  transition: color 0.5s;
-}
-
-body a:hover {
-  color: var(--link-color)
-} */
