@@ -4,7 +4,7 @@ This is my professional portfolio that communicates my experience, skill and exp
 ## Description 
 The goal of this project is to deliver a high-quality one-page website for myself, Joe Higgs. The intention is to promote myself to potential clients and employers in order to secure employment. As I continue to grow and develop within this field, I will continue to update it and demonstrate my skills through projects that I will add to the portfolio. The priority was to ensure effective use of html and css elements to construct a page which functions as intended. By applying my skills in these fields, I have been able to fully construct the page without any functionality issues. I have also taken time to extensively comment the .html and .css files so my work is understood. 
 
-**https://nonebula.github.io/horiseon-SEO-excellency/**
+**https://nonebula.github.io/joe-higgs-portfolio/**
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ The goal of this project is to deliver a high-quality one-page website for mysel
 This project is a website hosted on GitHub. To access and use the website, follow these steps:
 
 1. **Open your web browser:** Launch your preferred web browser.
-2. **Visit the project repository:** **https://github.com/nonebula/horiseon-SEO-excellency**
+2. **Visit the project repository:** **https://github.com/nonebula/joe-higgs-portfolio**
 3. **Navigate to the website:** Click the link to the website in the readme or via the repository.
 4. **Explore the website:** Enjoy exploring and interacting with the website.
 
@@ -28,15 +28,13 @@ If you encounter any issues or have questions, please refer to the documentation
 
 To navigate to each section on the webpage, click the heading link at the top of the page. Alternatively, you can scroll through the page to read it all! The screenshot below shows the page screenshot. Should the page fail to load in the presented format, make sure to load it up on a desktop monitor. 
 
-![Website Screenshot](/challenge%201/starter/assets/images/scrnli_24_10_2023_18-34-04.png)
+![Website Screenshot](/assets/screenshots/scrnli_30_10_2023_16-43-30.png)
 
 ## Credits
 
 The project was completed independently but built off the source code from: edX Boot Camps LLC. I worked with my tutor, Mila Hose, to identify issues and to format my code effectively. We also discussed how effective use of flexboxes has made my work more efficient.
 
-In producing this webpage, I utilized the following tutorials:
-* [Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
-* [Image `alt` attributes](https://www.w3schools.com/tags/att_img_alt.asp)
+In producing this webpage, I utilized a range of tutorials from W3 Schools and referred to several posts on Stack Overflow.
 
 ## License
 
